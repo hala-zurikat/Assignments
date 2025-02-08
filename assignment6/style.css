@@ -12,17 +12,25 @@ p {
   font-size: 18px;
   font-family: sans-serif;
 }
+#h100 {
+  color: hsl(133, 63%, 41%);
+  background-color: #3cff00;
+}
+.p2 {
+  color: hsl(9, 100%, 50%);
+  background-color: #e2b4b4;
+}
 h2 {
   color: hsl(273, 100%, 50%);
   font-family: sans-serif;
   text-align: center;
-  background-color: #e4ecdc;
+  background-color: #dfcaeb;
   padding: 15px;
 }
 h3 {
-  color: hsl(129, 100%, 50%);
+  color: hsl(129, 81%, 46%);
   font-family: sans-serif;
   text-align: center;
-  background-color: #ecdcdc;
+  background-color: #d3e9d6;
   padding: 15px;
 }
