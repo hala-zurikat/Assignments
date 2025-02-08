@@ -1,0 +1,23 @@
+* {
+  color: blueviolet;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+.art1 {
+  background-image: url(media/download.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.art2 {
+  background-image: url(media/images.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.art3 {
+  background-image: url(media/photo-1498050108023-c5249f4df085.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
