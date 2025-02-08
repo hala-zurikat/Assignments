@@ -1,0 +1,28 @@
+h1 {
+  color: hsl(0, 100%, 50%);
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #ecdcdc;
+  padding: 15px;
+}
+p {
+  padding: 15px;
+  background-color: gold;
+  color: #444;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+h2 {
+  color: hsl(273, 100%, 50%);
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #e4ecdc;
+  padding: 15px;
+}
+h3 {
+  color: hsl(129, 100%, 50%);
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #ecdcdc;
+  padding: 15px;
+}
