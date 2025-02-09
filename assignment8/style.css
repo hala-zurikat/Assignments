@@ -1,26 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .one {
   color: red;
-  background-color: green;
+  background-color: rgb(225, 249, 8);
   border: 10px solid black;
+  padding: 15px;
+  width: 300px;
 }
 .two {
   margin-top: 12px;
   color: blue;
-  background-color: violet;
-  border: 10px rgb(64, 0, 255) solid;
-  border-radius: 20px;
+  background-color: rgb(10, 233, 77);
+  border: 10px rgb(247, 0, 255) solid;
+  padding: 15px;
+  width: 350px;
 }
 .three {
   margin-top: 20px;
-  color: blue;
-  background-color: violet;
-  border: 10px rgb(64, 0, 255) solid;
-  border-radius: 20px;
+  color: rgb(255, 153, 0);
+  background-color: rgb(35, 145, 185);
+  padding: 15px;
+  border: 10px rgb(45, 6, 143) solid;
 }
 .four {
-  color: red;
+  color: rgb(255, 0, 162);
   background-color: green;
-  padding: 10px;
+  padding: 15px;
   border: 15px rgb(255, 0, 0) solid;
-  border-radius: 20px;
+}
+.work2 {
+  height: 100vh;
+}
+.work2 img {
+  width: 40%;
+  border: 2px black solid;
+}
+.work2 span {
+  width: 60%;
+  border: 2px black solid;
+}
+.name {
+  color: chartreuse;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: center;
+  font-family: sans-serif;
+  text-shadow: 5px 5px 15px black;
+}
+.name-p {
+  margin-top: 15px;
+  color: rgb(149, 15, 149);
+  text-transform: capitalize;
+  text-align: justify;
+  font-family: sans-serif;
+  margin-top: 15px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+  background-color: #c9c7c7;
+  border: 2px black solid;
+  border-radius: 10px;
+}
+a:hover {
+  background-color: green;
 }
