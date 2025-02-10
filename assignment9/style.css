@@ -42,10 +42,11 @@ button:hover {
   padding: 15px;
   border: 2px solid red;
 }
+
 .boxes {
   display: flex;
   border: 2px black solid;
-  padding: 15px;
+  padding: 25px;
   gap: 15px;
   flex-direction: column;
 }
