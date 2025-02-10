@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  background-color: #444;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 5px black solid;
+  padding: 15px;
+}
+a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  color: white;
+  background-color: rgb(150, 171, 170);
+}
+button {
+  padding: 10px;
+}
+button:hover {
+  background-color: green;
+}
+.numbers {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  border: 2px red solid;
+  padding: 10px;
+}
+.two2 {
+  /**flex-basis: 100px;**/
+  flex: 1;
+}
+.one1 {
+  flex: 1;
+}
+.numbers div {
+  padding: 15px;
+  border: 2px solid red;
+}
+.boxes {
+  display: flex;
+  border: 2px black solid;
+  padding: 15px;
+  gap: 15px;
+  flex-direction: column;
+}
+.box1 {
+  border: 2px black solid;
+}
+.box2 {
+  border: 2px black solid;
+}
+.boxes div {
+  padding: 15px;
+}
+.box1 {
+  display: flex;
+  gap: 10px;
+}
+.box1 div {
+  border: 2px black solid;
+}
+.c1 {
+  flex: 1;
+}
+.c2 {
+  flex: 1;
+}
+.c3 {
+  flex: 2;
+}
+.box2 {
+  display: flex;
+  gap: 10px;
+}
+.box2 div {
+  border: 2px black solid;
+}
+.b1 {
+  flex: 1;
+}
+.b2 {
+  flex: 2;
+}
+.b2 {
+  display: flex;
+  gap: 10px;
+}
+.b2 div {
+  flex: 1;
+}
+.b1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.n1 {
+  flex: 1;
+}
+.n2 {
+  flex: 2;
+}
