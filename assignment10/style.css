@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*we add perant in the flex to but it in the center*/
+.parent {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  border: 2px black solid;
+  padding: 15px;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(206, 71, 255);
+  /*this propertie will alow me to add the box on the center snd responsive*/
+  max-width: 500px;
+}
