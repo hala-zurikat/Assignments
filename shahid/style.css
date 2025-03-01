@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.left-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.right-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: rgb(47, 255, 64);
+}
+.offer {
+  background-image: linear-gradient(to right, rgb(16, 210, 240), green);
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+.video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+.logo img {
+  height: 37px;
+  width: 100px;
+}
+/* .logo2 img {
+  height: 37px;
+  width: 100px;
+  position: absolute;
+  right: 8%;
+  bottom: 20%;
+} */
+.movie-detail-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 70vh;
+  padding: 15px;
+}
+p .dot {
+  color: rgb(34, 163, 47);
+  font-size: larger;
+  border-radius: 50px;
+}
+.movie-detail {
+  font-size: 18px;
+  font-weight: bolder;
+  color: aliceblue;
+}
+.movies-img {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+.movies {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.non-stop-streaming,
+.coming-soon,
+.ramadan-playlist {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.label {
+  color: aliceblue;
+  font-size: 19px;
+  text-transform: uppercase;
+  padding: 5px;
+}
+.hidden-bg {
+  background: rgba(34, 34, 34, 0.5) !important;
+  backdrop-filter: blur(10px);
+  transition: background 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  color: aliceblue;
+  height: 30vh;
+  gap: 15px;
+}
+.links {
+  display: flex;
+  font-size: 17px;
+  font-weight: bold;
+  gap: 20px;
+}
+.icons {
+  display: flex;
+  font-size: 25px;
+  gap: 20px;
+}
+.icons i {
+  background-color: #6b6a6a;
+  border-radius: 50%;
+  padding: 9px;
+}
+.mbc {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+.copy-right {
+  color: #aba9a9;
+}
