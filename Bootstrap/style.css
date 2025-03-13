@@ -1,12 +1,7 @@
 .color {
   color: white;
 }
-.color2 {
-  color: black;
-}
-.color3 {
-  color: #777676;
-}
+
 /* .first-text {
   display: flex;
   flex-direction: column;
@@ -14,7 +9,7 @@
   justify-content: center;
   height: 600px;
   max-width: 700px;
-} */
+} 
 .cards1 {
   display: flex;
   align-items: center;
@@ -23,7 +18,7 @@
 .left-cards {
   display: flex;
   flex-direction: column;
-}
+}*/
 /* .background {
   background-image: url(Media/background.webp);
   background-position: top right;
@@ -33,23 +28,24 @@
 .background {
   height: 900px;
 }
-.background2 {
+/* .background2 {
   background-image: url(Media/background2.webp);
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
   height: 1000px;
-}
-.background3 {
+} */
+/* .background3 {
   background-image: url(Media/earth-info.webp);
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
   height: 800px;
-}
+} */
 .sec4 {
   height: 450px;
 }
+
 .sec6 {
   height: 90vh;
 }
@@ -66,4 +62,10 @@
 }
 .card-img {
   object-fit: cover;
+}
+.Explore img {
+  height: 500px;
+}
+.topics {
+  height: 900px;
 }
