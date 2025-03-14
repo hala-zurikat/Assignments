@@ -21,13 +21,18 @@
       crossorigin="anonymous"
     ></script>
     <title>NASA</title>
+    <link rel="icon" href="Media/cropped-nasa-logo-wallpaper-300x300.webp" type="image/x-icon">
+
   </head>
   <body>
+         <!---------------------The NAVBAR-------------------->
+
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-      <div class="container-fluid">
+      <div class="container-fluid d-flex align-items-center position-relative">
+        <div class="nav1 d-flex align-items-center">
         <li class="nav-item dropdown">
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link dropdown-toggle fw-bold"
             href="#"
             id="navbarDropdown"
             role="button"
@@ -36,6 +41,7 @@
           >
             Explore
           </a>
+          
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -47,12 +53,15 @@
         </li>
         <form class="d-flex">
           <input
-            class="form-control me-2"
+            class="form-control me-2 bg-dark p-1"
             type="search"
             placeholder="Search"
             aria-label="Search"
           />
         </form>
+      </div>
+        <div class="nav2 d-flex align-items-center">
+       
         <button
           class="navbar-toggler"
           type="button"
@@ -67,7 +76,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <a class="navbar-brand" href="#">
-              <img
+              <img class="position-absolute start-50 top-0"
                 src="Media/cropped-nasa-logo-wallpaper-300x300.webp"
                 alt=""
                 width="60px"
@@ -118,7 +127,7 @@
             <a class="navbar-brand" href="#">Nasa +</a>
           </ul>
         </div>
-      </div>
+      </div> </div>
     </nav>
     <div class="card bg-dark text-white">
       <img src="Media/background.webp" class="card-img background" />
@@ -133,7 +142,7 @@
             IM-2 mission is part of NASA’s Commercial Lunar Payload Services
             initiative.
           </p>
-          <button class="btn btn-danger fs-4 col-md-3" type="button">
+          <button class="btn btn-danger fs-4 col-lg-3 col-md-6 col-sm-12 " type="button">
             Mission Updates
           </button>
         </div>
@@ -141,20 +150,20 @@
         <div class="d-flex p-5 justify-content-between w-75 flex-wrap">
           <div>
             <p class="color text-uppercase border-top pt-2">LUNAR SCIENCE</p>
-            <a class="fs-4 text-decoration-none color fw-bold" href="http://">
+            <a class="fs-4 text-decoration-none text-white fw-bold" href="http://">
               Scouting the Moon's Surface
               <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
           <div>
             <p class="color text-uppercase border-top pt-2">LUNAR SCIENCE</p>
-            <a class="fs-4 text-decoration-none color fw-bold" href="http://">
+            <a class="fs-4 text-decoration-none text-white fw-bold" href="http://">
               Tracking Lunar Landers <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
           <div>
             <p class="color text-uppercase border-top pt-2">LUNAR ECONOMY</p>
-            <a class="fs-4 text-decoration-none color fw-bold" href="http://">
+            <a class="fs-4 text-decoration-none text-white fw-bold" href="http://">
               Commercial Partners <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
@@ -163,12 +172,13 @@
       </div>
     </div>
     <!--------------------- Featured News -------------------->
-    <div class="news d-flex justify-content-between">
+    <div class="news d-flex justify-content-between containe">
       <p class="fs-1 color2 fw-bold p-5">Featured News</p>
       <p class="fs-2 color2 fw-bolder p-5">More NASA News</p>
     </div>
-    <div class="container row ps-5">
-      <div class="card bg-dark text-white col-md-6 position-relative">
+    <div class="container">
+    <div class="row ps-5 g-0">
+      <div class="card bg-dark text-white col-lg-6 col-md-3 col-sm-12 position-relative">
         <img src="Media/crew.webp" class="card-img" alt="..." />
         <div class="card-img-overlay">
           <p class="card-text1 text-uppercase">
@@ -183,7 +193,7 @@
           </div>
         </div>
       </div>
-      <div class="card bg-dark text-white col-md-3 position-relative">
+      <div class="card bg-dark text-white col-lg-3 col-md-3 col-sm-12 position-relative">
         <img src="Media/galaxy2.webp" class="card-img h-100" alt="..." />
         <div class="card-img-overlay">
           <p class="card-text1 text-uppercase">
@@ -197,7 +207,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-lg-3 col-md-3 col-sm-12">
         <div class="card bg-dark text-white position-relative">
           <img src="Media/galaxy.webp" class="card-img" alt="..." />
           <div class="card-img-overlay">
@@ -227,70 +237,9 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- <div class="cards1 row gap-2 img1">
-        <div class="card bg-dark text-white col-md-5 position-relative">
-          <img src="Media/crew.webp" class="card-img img1" />
-          <div class="card-img-overlay">
-            <p class="card-text1 text-uppercase">
-              <i class="fa-solid fa-table-list"></i>
-              news release
-            </p>
-            <div class="position-absolute bottom-0 start-0 pb-3 ps-3">
-              <h5 class="card-title">7 Min Read</h5>
-              <p class="card-text">
-                NASA Sets Coverage for Agency’s SpaceX Crew-10 Launch, Docking
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="card bg-dark text-white img2 col-md-3 position-relative">
-          <img src="Media/galaxy2.webp" class="card-img img2" />
-          <div class="card-img-overlay">
-            <p class="card-text1 text-uppercase">
-              <i class="fa-solid fa-table-list"></i> article
-            </p>
-            <div class="position-absolute bottom-0 pb-3">
-              <h5 class="card-title">3 Min Read</h5>
-              <p class="card-text">
-                NASA Successfully Acquires GPS Signals on Moon
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div
-            class="card bg-dark text-white mb-2 col-md-8 img3 position-relative"
-          >
-            <img src="Media/galaxy.webp" class="card-img img3" />
-            <div class="card-img-overlay">
-              <p class="card-text1 text-uppercase">
-                <i class="fa-solid fa-table-list"></i> image article
-              </p>
-              <div class="position-absolute bottom-0 pb-3">
-                <h5 class="card-title">6 Min Read</h5>
-                <p class="card-text">
-                  X-ray Signal Points to Destroyed Planet, Chandra Finds
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card bg-dark text-white col-md-8 img4 position-relative">
-            <img src="Media/space.jpg" class="card-img img4" />
-            <div class="card-img-overlay">
-              <p class="card-text1 text-uppercase">
-                <i class="fa-solid fa-table-list"></i>article
-              </p>
-              <div class="position-absolute bottom-0 pb-3">
-                <h5 class="card-title">6 Min Read</h5>
-                <p class="card-text">
-                  NASA’s Hubble Finds Kuiper Belt Duo May Be Trio
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
+    </div></div>
+                  <!--------------------- Small Images-------------------->
+
     <div class="container mt-5">
       <div class="row">
         <div class="col-md-3">
@@ -363,45 +312,37 @@
         </div>
       </div>
     </div>
-    <div class="card bg-dark text-white">
-      <img src="Media/background2.webp" class="card-img" alt="..." />
-      <div class="card-img-overlay">
-        <div class="position-absolute start-0 top-50 w-50 ps-5">
-          <p class="fs-1 fw-bold color pb-5">NASA’s SpaceX Crew-10</p>
-          <p class="fs-3 color pb-3">
-            Four crew members are preparing to launch to the International Space
-            Station on Wednesday, March 12, as part of NASA’s SpaceX Crew-10
-            mission to perform research, technology demonstrations, and
-            maintenance activities aboard the microgravity laboratory.
-          </p>
-          <a class="fs-3 color text-decoration-none fw-bolder" href="#">
-            What to Know <i class="fa-solid fa-arrow-right"></i
-          ></a>
-        </div>
-      </div>
-    </div>
-    <!-- <div class="background2 position-relative">
-      <div class="position-absolute top-50 start-0 w-50 ps-5">
-        <p class="fs-1 fw-bold color pb-5">NASA’s SpaceX Crew-10</p>
-        <p class="fs-3 color pb-3">
-          Four crew members are preparing to launch to the International Space
-          Station on Wednesday, March 12, as part of NASA’s SpaceX Crew-10
-          mission to perform research, technology demonstrations, and
-          maintenance activities aboard the microgravity laboratory.
+                 <!--------------------- SpaceX Crew-10 -------------------->
+
+                 <div class="card bg-dark text-white">
+                  <img src="Media/background2.webp" class="card-img" style="min-height: 500px;"/>
+                  <div class="card-img-overlay d-flex flex-column justify-content-center ps-5 w-50">
+                    <div>
+                      <p class="fs-1 fw-bold color pb-5">NASA’s SpaceX Crew-10</p>
+                      <p class="fs-3 color pb-3">
+                        Four crew members are preparing to launch to the International Space
+                        Station on Wednesday, March 12, as part of NASA’s SpaceX Crew-10
+                        mission to perform research, technology demonstrations, and
+                        maintenance activities aboard the microgravity laboratory.
+                      </p>
+                      <a class="fs-3 text-white text-decoration-none fw-bolder" href="#">
+                        What to Know <i class="fa-solid fa-arrow-right"></i
+                      ></a></div>
+                  </div>
+                </div>
+                
+                      <!--------------------- Humans in Space -------------------->
+
+   
+    <div class="container">
+      <div class="news d-flex justify-content-between flex-wrap">
+        <p class="fs-1 fw-bold p-5">Humans in Space</p>
+        <p class="fs-2 fw-bolder p-5">
+          Discover More <i class="fa-solid fa-arrow-right"></i>
         </p>
-        <a class="fs-3 color text-decoration-none fw-bolder" href="#">
-          What to Know <i class="fa-solid fa-arrow-right"></i
-        ></a>
       </div>
-    </div> -->
-    <div class="news d-flex justify-content-between">
-      <p class="fs-1 color2 fw-bold p-5">Humans in Space</p>
-      <p class="fs-2 color2 fw-bolder p-5">
-        Discover More <i class="fa-solid fa-arrow-right"></i>
-      </p>
-    </div>
-    <div class="container sec4 d-flex gap-3 pb-3">
-      <div class="card text-white position-relative">
+      <div class="sec4 g-0 row pb-3">
+      <div class="card text-white position-relative col-lg-3 col-md-6 col-sm-12">
         <img src="Media/human-img1.webp" class="card-img h-100" />
         <div class="card-img-overlay">
           <h5 class="card-title position-absolute bottom-0 fs-3">
@@ -410,7 +351,7 @@
           </h5>
         </div>
       </div>
-      <div class="card text-white position-relative">
+      <div class="card text-white position-relative col-lg-3 col-md-6 col-sm-12">
         <img src="Media/human-img2.jpg" class="card-img h-100" />
         <div class="card-img-overlay">
           <h5 class="card-title position-absolute bottom-0 fs-3">
@@ -418,7 +359,7 @@
           </h5>
         </div>
       </div>
-      <div class="card text-white position-relative">
+      <div class="card text-white position-relative col-lg-3 col-md-6 col-sm-12">
         <img src="Media/human-img3.webp" class="card-img h-100" />
         <div class="card-img-overlay">
           <h5 class="card-title position-absolute bottom-0 fs-3">
@@ -426,7 +367,7 @@
           </h5>
         </div>
       </div>
-      <div class="card text-white position-relative">
+      <div class="card text-white position-relative col-lg-3 col-md-6 col-sm-12">
         <img src="Media/human-img4.webp" class="card-img h-100" />
         <div class="card-img-overlay">
           <h5 class="card-title position-absolute bottom-0 fs-3">
@@ -434,102 +375,38 @@
           </h5>
         </div>
       </div>
-    </div>
-    <div class="card bg-dark text-white mb-5">
-      <img src="Media/earth-info.webp" class="card-img" alt="..." />
-      <div class="position-absolute top-50 start-0 ps-5 w-50">
-        <p class="fs-1 fw-bold color card-title">Earth Information Center</p>
-        <p class="colo fs-4 text-wrapr card-text">
-          For more than 50 years, NASA satellites have provided data on Earth's
-          land, water, air, temperature, and climate. NASA's Earth Information
-          Center allows visitors to see how our planet is changing in six key
-          areas: sea level rise and coastal impacts, health and air quality,
-          wildfires, greenhouse gases, sustainable energy, and agriculture.
-        </p>
-        <p>
-          <a
-            class="fs-4 fw-bolder text-decoration-none color card-text"
-            href="#"
-            >about Earth Information Center
-            <i class="fa-solid fa-arrow-right"></i
-          ></a>
-        </p>
-      </div>
-    </div>
+    </div></div>
+                  <!--------------------- Earth Information -------------------->
 
-    <!-- <div class="background3 position-relative mb-5">
-      <div class="position-absolute top-50 start-0 ps-5 w-50">
-        <p class="fs-1 fw-bold color">Earth Information Center</p>
-        <p class="colo fs-4 text-wrapr">
-          For more than 50 years, NASA satellites have provided data on Earth's
-          land, water, air, temperature, and climate. NASA's Earth Information
-          Center allows visitors to see how our planet is changing in six key
-          areas: sea level rise and coastal impacts, health and air quality,
-          wildfires, greenhouse gases, sustainable energy, and agriculture.
-        </p>
-        <p>
-          <a class="fs-4 fw-bolder text-decoration-none color" href="#"
-            >about Earth Information Center</a
-          >
-        </p>
-      </div>
-    </div> -->
-    <!-- <div class="container sec6">
-      <div class="card position-relative text-white">
-        <div>
-          <img
-            src="Media/image-of-the-day.webp"
-            class="card-img img-fluid position-absolute end-0 p-3"
-            style="width: 500px; height: 500px"
-          />
-          <p>
-            <a
-              class="position-absolute end-0 bottom-0 color2 text-decoration-none"
-              href="#"
-            >
-              View image <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </p>
-        </div>
+                  <div class="card bg-dark text-white mb-5">
+                    <img src="Media/earth-info.webp" class="card-img" alt="..." />
+                    <div class="card-img-overlay d-flex flex-column justify-content-center w-50 ps-5">
+                      <p class="fs-1 fw-bold color card-title">Earth Information Center</p>
+                      <p class="colo fs-4 text-wrapr card-text">
+                        For more than 50 years, NASA satellites have provided data on Earth's
+                        land, water, air, temperature, and climate. NASA's Earth Information
+                        Center allows visitors to see how our planet is changing in six key
+                        areas: sea level rise and coastal impacts, health and air quality,
+                        wildfires, greenhouse gases, sustainable energy, and agriculture.
+                      </p>
+                      <p>
+                        <a
+                          class="fs-4 fw-bolder text-decoration-none text-white card-text"
+                          href="#"
+                          >about Earth Information Center
+                          <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                      </p>
+                    </div>
+                  </div>
+              <!--------------------- Image Of The Day -------------------->
 
-        <div class="card-body col-md-5">
-          <div class="body-text color2">
-            <p class="card-text">
-              <small class="fs-4 text-muted">today</small>
-            </p>
-            <h5 class="card-title">Image Of The Day</h5>
-            <p class="card-text">
-              <small class="fs-2 fw-bold card-title"
-                >NASA Astronaut Tracy Dyson Speaks to Students
-              </small>
-            </p>
-            <p class="fs-5 card-text">
-              NASA astronaut Tracy Dyson points to the Expedition 71 patch on
-              her flight suit as she answers a question from students,
-              Wednesday, March 5, 2025, at Elsie Whitlow Stokes Community
-              Freedom Public Charter School in Washington. Dyson and fellow
-              crewmates Matthew Dominick, Michael Barratt, and Jeanette Epps
-              served as part of Expedition 71 aboard the International Space
-              Station.
-            </p>
-            <p>
-              <a
-                class="color2 fs-4 fw-bolder text-decoration-none color"
-                href="#"
-              >
-                Browse Image Archive <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <div class="container">
       <div class="card mb-3" style="max-width: 1500px">
         <div class="row g-0">
           <div class="col-md-6">
             <div class="card-body">
-              <h5 class="card-title">Image Of The Day</h5>
+              <h5 class="card-title fw-bold">Image Of The Day</h5>
               <div class="card-text">
                 <p class="fs-2 fw-bold card-title"></p>
                   NASA Astronaut Tracy Dyson Speaks to Students
@@ -566,9 +443,9 @@
         </div>
       </div>
     </div>
-    <p class="fs-1 color2 fw-bold p-5">More NASA Images</p>
         <!--------------------- NASA Images -------------------->
         <div class="container mb-3">
+          <p class="fs-1 color2 fw-bold p-5">More NASA Images</p>
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col-md-4">
               <div class="card h-100">
@@ -625,9 +502,11 @@
             </div> </div>
           </div>
       </div>
+                          <!--------------------- Explore -------------------->
+
       <div class="card bg-dark text-white Explore">
         <img src="Media/explore-background.webp" class="card-img">
-        <div class="card-img-overlay d-flex flex-column justify-content-center gap-2 ps-5 ">
+        <div class="card-img-overlay d-flex flex-column justify-content-center gap-2 ps-5 flex-wrap ">
           <div>
           <h5 class="card-title fs-1">Explore the Universe from your Inbox</h5>
           </div><p class="card-text fs-4 w-50">Stay up-to-date on the latest news from NASA–from Earth to the Moon, the Solar System and beyond.</p>
@@ -638,74 +517,195 @@
           <p class="card-text fs-3 "><a class="text-decoration-none text-white" href="#">Sign Up <i class="fa-solid fa-arrow-right"></i></a></p>
         </div>
       </div>
-              <!--------------------- More Topics From NASA -------------------->
-              <p class="fs-1 text-dark fw-bold p-5">More Topics form NASA</p>
-              <div class="container d-flex gap-5 pb-3 flex-wrap topics">
+                    <!--------------------- The Iframe -------------------->
+
+      <div class="card bg-dark framee text-white mt-5">
+        <div>
+          <div class="p-5 row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <h5 class="card-title text-muted">Featured Video</h5>
+            <h5 class="card-title fs-1">Say Cheese, Moon!</h5>
+            <p class="card-text">A team at Langley Research Center in Hampton, Virginia, has captured first-of-its-kind imagery of a lunar lander’s engine plumes interacting with the Moon’s surface, a key piece of data as trips to the Moon increase. The Stereo Cameras for Lunar-Plume Surface Studies (SCALPSS) 1.1 instrument took the images during the descent and successful soft landing of Firefly Aerospace’s Blue Ghost lunar lander on the Moon’s Mare Crisium region on Sunday, March 2.</p>
+            <p class="card-text"><a class="fw-bold text-white text-decoration-none" href="#">Featured Video <i class="fa-solid fa-arrow-right"></i></a> </p> 
+          </div>  
+          <div class="ratio ratio-16x9 w-100 mx-auto col-lg-6 col-md-6 col-sm-12" style="max-width: 500px;">
+            <iframe src="https://www.youtube.com/embed/9RTehiOVIDw" 
+                    title="NASA's SpaceX Crew-10 March 12, 2025 Launch Attempt (Official NASA Broadcast)" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+        </div>
+      </div> 
+              <!--------------------- More Topics -------------------->
+              <div class="container pb-3 topics">
+                <p class="fs-1 text-dark fw-bold p-5">More Topics from NASA</p>
+                
+                <!-- First Row -->
                 <div class="row">
-                <div class="card text-white position-relative col-md-3">
-                  <img src="Media/human-img1.webp" class="card-img h-100" />
-                  <div class="card-img-overlay">
-                    <h5 class="card-title position-absolute bottom-0 fs-3">
-                      Low Earth Orbit Economy
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </h5>
+                  <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card text-white position-relative ">
+                      <img src="Media/Topic1.webp" class="card-img " style="height: 400px;" />
+                      <div class="card-img-overlay">
+                        <h5 class="card-title position-absolute bottom-0 fs-3">
+                          Missions <i class="fa-solid fa-arrow-right"></i>
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card text-white position-relative">
+                      <img src="Media/Topic2.webp" class="card-img" style="height: 400px;" />
+                      <div class="card-img-overlay">
+                        <h5 class="card-title position-absolute bottom-0 fs-3">
+                          Humans In Space <i class="fa-solid fa-arrow-right"></i>
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card text-white position-relative">
+                      <img src="Media/Topic3.webp" class="card-img" style="height: 400px;"/>
+                      <div class="card-img-overlay">
+                        <h5 class="card-title position-absolute bottom-0 fs-3">
+                          Climate Change <i class="fa-solid fa-arrow-right"></i>
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card text-white position-relative">
+                      <img src="Media/Topic4.webp" class="card-img" style="height: 400px;"/>
+                      <div class="card-img-overlay">
+                        <h5 class="card-title position-absolute bottom-0 fs-3">
+                          Our Solar System <i class="fa-solid fa-arrow-right"></i>
+                        </h5>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="card text-white position-relative col-md-3">
-                  <img src="Media/human-img2.jpg" class="card-img h-100" />
-                  <div class="card-img-overlay">
-                    <h5 class="card-title position-absolute bottom-0 fs-3">
-                      Living in Space <i class="fa-solid fa-arrow-right"></i>
-                    </h5>
-                  </div>
-                </div>
-                <div class="card text-white position-relative col-md-3">
-                  <img src="Media/human-img3.webp" class="card-img h-100" />
-                  <div class="card-img-overlay">
-                    <h5 class="card-title position-absolute bottom-0 fs-3">
-                      Commercial Space <i class="fa-solid fa-arrow-right"></i>
-                    </h5>
-                  </div>
-                </div>
-                <div class="card text-white position-relative col-md-3">
-                  <img src="Media/human-img4.webp" class="card-img h-100" />
-                  <div class="card-img-overlay">
-                    <h5 class="card-title position-absolute bottom-0 fs-3">
-                      Spaceships and Rockets <i class="fa-solid fa-arrow-right"></i>
-                    </h5>
-                  </div>
-                </div></div>
+              
+                <!-- Second Row -->
                 <div class="row">
-                <div class="card text-white position-relative col-md-3">
-                  <img src="Media/human-img4.webp" class="card-img h-100" />
-                  <div class="card-img-overlay">
-                    <h5 class="card-title position-absolute bottom-0 fs-3">
-                      Spaceships and Rockets <i class="fa-solid fa-arrow-right"></i>
-                    </h5>
+                  <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card text-white position-relative">
+                      <img src="Media/Topic5.webp" class="card-img" style="height: 400px;"/>
+                      <div class="card-img-overlay">
+                        <h5 class="card-title position-absolute bottom-0 fs-3">
+                          Universe <i class="fa-solid fa-arrow-right"></i>
+                        </h5>
+                      </div>
+                    </div>
                   </div>
-                </div>  <div class="card text-white position-relative col-md-3">
-                  <img src="Media/human-img4.webp" class="card-img h-100" />
-                  <div class="card-img-overlay">
-                    <h5 class="card-title position-absolute bottom-0 fs-3">
-                      Spaceships and Rockets <i class="fa-solid fa-arrow-right"></i>
-                    </h5>
+                  <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card text-white position-relative">
+                      <img src="Media/Topic6.webp" class="card-img" style="height: 400px;"/>
+                      <div class="card-img-overlay">
+                        <h5 class="card-title position-absolute bottom-0 fs-3">
+                          Latest NASA Science News <i class="fa-solid fa-arrow-right"></i>
+                        </h5>
+                      </div>
+                    </div>
                   </div>
-                </div>  <div class="card text-white position-relative col-md-3">
-                  <img src="Media/human-img4.webp" class="card-img h-100" />
-                  <div class="card-img-overlay">
-                    <h5 class="card-title position-absolute bottom-0 fs-3">
-                      Spaceships and Rockets <i class="fa-solid fa-arrow-right"></i>
-                    </h5>
+                  <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card text-white position-relative">
+                      <img src="Media/Topic7.webp" class="card-img" style="height: 400px;" />
+                      <div class="card-img-overlay">
+                        <h5 class="card-title position-absolute bottom-0 fs-3">
+                          Aeronautics <i class="fa-solid fa-arrow-right"></i>
+                        </h5>
+                      </div>
+                    </div>
                   </div>
-                </div>  <div class="card text-white position-relative col-md-3">
-                  <img src="Media/human-img4.webp" class="card-img h-100" />
-                  <div class="card-img-overlay">
-                    <h5 class="card-title position-absolute bottom-0 fs-3">
-                      Spaceships and Rockets <i class="fa-solid fa-arrow-right"></i>
-                    </h5>
+                  <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card text-white position-relative">
+                      <img src="Media/Topic8.webp" class="card-img" style="height: 400px;"/>
+                      <div class="card-img-overlay">
+                        <h5 class="card-title position-absolute bottom-0 fs-3">
+                          Technology <i class="fa-solid fa-arrow-right"></i>
+                        </h5>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              </div>
-  </body>
+              
+                            <!--------------------- The Footer-------------------->
+<div class="footer bg-dark mt-5 p-5">
+  <a class="navbar-brand" href="#">
+    <img
+      src="Media/cropped-nasa-logo-wallpaper-300x300.webp"
+      alt=""
+      width="60px"
+      height="60px"
+    />
+  </a>
+  <div class="d-flex border-bottom flex-wrap">
+  <div class="left-footer w-25 ps-3">
+<p class="text-white fs-3">National Aeronautics and Space Administration</p>
+<p class="text-white">NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery.</p>
+<p class="text-white">About NASA's Mission</p>
+<p ><a class="text-white text-decoration-none" href="#">  Join Us <i class="fa-solid fa-arrow-right"></i></a ></p>
+  </div>
+  <div class="center-footer text-white d-flex gap-5 justify-content-center flex-grow-1 flex-wrap">
+    <ul class="list-unstyled">
+      <li>Home</li>
+      <li>News & Events</li>
+      <li>Multimedia</li>
+      <li>NASA +</li>
+      <li>Missions</li>
+    </ul>
+    <ul class="list-unstyled">
+      <li>Humans in Space</li>
+      <li>Earth</li>
+      <li>The Solar System</li>
+      <li>The Universe</li>
+      <li>Science</li>
+    </ul>
+    <ul class="list-unstyled">
+      <li>Aeronautics</li>
+      <li>Technology</li>
+      <li>Learning Resources</li>
+      <li>About NASA</li>
+      <li>NASA en Espanol</li>
+    </ul>
+  </div>
+  <div class="right-footer text-white p-1 fs-5">
+    <ul class="list-unstyled">
+      <li class="text-muted">Follow NASA</li>
+      <li>
+        <ul class="d-flex list-unstyled gap-2 flex-wrap">
+        <li><i class="fa-brands fa-facebook"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-youtube"></i></li>
+        <li><i class="fa-brands fa-x-twitter"></i></li>
+</ul>
+</li>
+      <li>More NASA Social Accounts</li>
+      <li>NASA Newsletters</li>
+    </ul></div></div>
+    <div class="last-footer text-muted d-flex gap-4 pt-2 ps-3 flex-wrap">
+  <p>Sitemap</p>
+  <p>For Media</p>
+  <p>Privacy Policy</p>
+  <p>FOIA</p>
+  <p>No FEAR Act</p>
+  <p>Office of the IG</p>
+  <p>Budget & Annual Reports</p>
+  <p>Agency Financial Reports</p>
+  <p>Contact NASA</p>
+  <p>No FEAR Act</p>
+  <p>Office of the IG</p>
+  <p>Budget & Annual Reports</p>
+  <p>Agency Financial Reports</p>
+  <p>Contact NASA</p>
+  <p>Accessibility</p>
+  <p>Office of the IG</p>
+    </div>
+
+</div>
+ </body>
 </html>
