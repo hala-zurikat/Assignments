@@ -1,62 +1,20 @@
-.color {
-  color: white;
-}
-
-/* .first-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  height: 600px;
-  max-width: 700px;
-} 
-.cards1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.left-cards {
-  display: flex;
-  flex-direction: column;
-}*/
-/* .background {
-  background-image: url(Media/background.webp);
-  background-position: top right;
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
 .background {
   height: 900px;
 }
-/* .background2 {
-  background-image: url(Media/background2.webp);
-  background-size: cover;
-  background-position: top right;
-  background-repeat: no-repeat;
-  height: 1000px;
-} */
-/* .background3 {
-  background-image: url(Media/earth-info.webp);
-  background-size: cover;
-  background-position: top right;
-  background-repeat: no-repeat;
-  height: 800px;
-} */
 .sec4 {
-  height: 450px;
+  min-height: 450px;
 }
-
 .sec6 {
-  height: 90vh;
+  min-height: 90vh;
 }
 .fa-solid {
   background-color: rgb(179, 44, 44);
   padding: 5px;
   border-radius: 50%;
 }
-.img2 {
+/* .img2 {
   height: 390px;
-}
+} */
 .space {
   height: 300px;
 }
@@ -67,5 +25,15 @@
   height: 500px;
 }
 .topics {
-  height: 900px;
+  min-height: 1000px;
+}
+.framee {
+  min-height: 500px;
+}
+.content {
+  max-width: 750px;
+  max-height: 80vh;
+}
+.footer {
+  min-height: 500px;
 }
