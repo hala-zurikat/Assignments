@@ -1,0 +1,9 @@
+body {
+  background: linear-gradient(to bottom right, #fbecec, #fdf6e3);
+}
+#preview {
+  margin-left: 10px;
+}
+.hide {
+  display: none;
+}
