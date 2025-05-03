@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>the secounds are = <%= seconds %></p>
+
+    <% if (seconds %2===0) { %>
+    <p><%-"no data to display" %></p>
+    <% } else { %>
+    <p>the title is: <%= title %></p>
+    <ul>
+      <%for(let item of items){%>
+      <li><%= item %></li>
+      <% } %>
+    </ul>
+    <%- htmlContent %> <% } %>
+  </body>
+</html>
