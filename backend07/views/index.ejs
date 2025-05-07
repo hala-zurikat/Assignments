@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Names</title>
+  </head>
+  <body>
+    <% if (locals.newName1 && locals.newName2) { %>
+    <h1><%=newName1 %> <%=newName2 %></h1>
+    <% } %>
+
+    <form action="/submit" method="post">
+      <input type="submit" value="Generate Names" />
+    </form>
+    <%- include("partials/footer.ejs") %>
+  </body>
+</html>
