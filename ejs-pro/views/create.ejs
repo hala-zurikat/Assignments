@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post</title>
+  </head>
+  <body>
+    <%- include("partials/header.ejs") %>
+    <h1 class="text-center m-5">Post anything</h1>
+
+    <form action="/add" method="post">
+      <div class="container mt-5">
+      <div class="mb-3">
+        <label for="post" class="form-label">Post Title:</label>
+        <input type="text" name="title" class="form-control" id="Post" />
+      </div>
+      <div class="mb-3">
+        <label for="Content" class="form-label">Post Content:</label>
+        <textarea class="form-control" name="content" id="Content" rows="3"></textarea>
+      </div>
+      <input type="submit" value="Post" class="btn btn-danger p-3 m-3" />
+    </form></div>
+  <%- include("partials/footer.ejs") %>
+</body>    
+
+</html>

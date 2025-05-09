@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Posts</title>
+  </head>
+  <body>
+    <%- include("partials/header.ejs") %>
+    <h1 class="text-center m-5">Edit Posts</h1>
+    <% if (locals.editedTitle && locals.editedContent) { %>
+    <div class="container m-5">
+      <form action="/update" method="POST">
+        <input type="hidden" name="id" value="<%= postId %>" />
+        <div class="mb-3">
+          <label for="title" class="form-label">Title:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            name="title"
+            value="<%= editedTitle %>"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="content" class="form-label">Content:</label>
+          <textarea class="form-control" id="content" rows="3" name="content">
+<%= editedContent %></textarea
+          >
+        </div>
+        <input type="submit" value="Save" class="btn btn-danger p-3 m-3" />
+      </form>
+    </div>
+    <% } %> <%- include("partials/footer.ejs") %>
+  </body>
+</html>
