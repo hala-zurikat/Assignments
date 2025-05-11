@@ -40,7 +40,7 @@ app.get("/update/:id", (req, res) => {
   });
 });
 app.post("/update", (req, res) => {
-  const id = parseInt(req.body.id); // بدنا نبعث id مخفي من الفورم
+  const id = parseInt(req.body.id);
   const post = posts.find((p) => p.id === id);
 
   if (!post) return res.status(404).send("Post not found");
@@ -68,8 +68,8 @@ app.post("/delete/:id", (req, res) => {
   const postIndex = posts.findIndex((p) => p.id === postId);
 
   if (postIndex !== -1) {
-    posts.splice(postIndex, 1); // حذف البوست من المصفوفة
-    res.redirect("/"); // العودة إلى الصفحة الرئيسية
+    posts.splice(postIndex, 1);
+    res.redirect("/");
   } else {
     res.status(404).send("Post not found");
   }
