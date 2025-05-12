@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Website</title>
+  </head>
+  <body>
+    <%- include("partials/header.ejs") %>
+    <h1 class="text-center m-5">Blog Website</h1>
+    <p class="text-center fs-2 fw-bold">Feel free to post anything you like!</p>
+
+    <div class="row col-m-6 col-sm-12 overflow-auto" style="height: 700px">
+      <% posts.forEach(post => { %>
+      <div class="col-sm-3 m-5 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><%= post.title %></h5>
+            <p class="card-text"><%= post.content %></p>
+            <a
+              href="/upadte/<%= post.id %>"
+              class="btn btn-danger p-3 m-3 edit-btn"
+            >
+              Edit Post
+            </a>
+            <form
+              action="/delete/<%= post.id %>"
+              method="POST"
+              class="deleteForm"
+            >
+              <input
+                type="submit"
+                value="Delete Post"
+                class="btn btn-danger p-3 m-3"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+      <% }); %>
+    </div>
+    <%- include("partials/footer.ejs") %>
+  </body>
+</html>
