@@ -1,0 +1,15 @@
+html,
+body {
+  height: 60vh;
+  margin: 0;
+}
+
+footer {
+  background-color: rgb(189, 67, 67);
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+.deleteForm {
+  display: inline-block;
+}
