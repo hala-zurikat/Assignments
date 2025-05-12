@@ -4,7 +4,36 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 const port = 3000;
-let posts = [];
+const posts = [
+  {
+    id: 1,
+    title: "Getting Started with JavaScript",
+
+    content:
+      "This post introduces the basics of JavaScript and how to get started with it.",
+  },
+  {
+    id: 2,
+    title: "Understanding Flexbox in CSS",
+
+    content:
+      "Flexbox is a powerful layout module. In this post, we explore how to use it to create responsive layouts.",
+  },
+  {
+    id: 3,
+    title: "Why You Should Learn React",
+
+    content:
+      "React is one of the most popular JavaScript libraries for building user interfaces. Let's explore why.",
+  },
+  {
+    id: 4,
+    title: "Introduction to Node.js",
+
+    content:
+      "Node.js allows you to run JavaScript on the server. This post covers the basics and common use cases.",
+  },
+];
 class Post {
   constructor(id, title, content) {
     this.id = id;

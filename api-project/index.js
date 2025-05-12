@@ -2,10 +2,10 @@ import express from "express";
 import bodyParser from "body-parser";
 import axios from "axios";
 const app = express();
+const port = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.use(bodyParser.json());
-const port = 3000;
 const api_url = "http://localhost:4000";
 
 app.get("/", async (req, res) => {
